@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="rockpaperscissors.css" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <h1>Rock Paper Scissors</h1>
+    <p>
+      Welcome to Rock, Paper, Scissors. Here you can play against the computer.
+      Who will win?!
+    </p>
+
+    <div>
+      <h2>What will you play?</h2>
+      <div>
+        <input type="radio" id="rock" value="rock" name="player" />
+        <label for="rock">Rock</label>
+      </div>
+      <div>
+        <input type="radio" id="paper" value="paper" name="player" />
+        <label for="paper">Paper</label>
+      </div>
+      <div>
+        <input type="radio" id="scissors" value="scissors" name="player" />
+        <label for="scissors">Scissors</label>
+      </div>
+      <div><button id="player-play" type="submit">Submit</button></div>
+    </div>
+
+    <div>
+      <h2>Press button to see what the computer played</h2>
+      <button id="computer-play">Computer played....</button>
+    </div>
+
+    <div>
+      <h2>And the winner is:</h2>
+      <span>YOU</span> / <span>COMPUTER</span>
+    </div>
+
+    <div>
+      <button>Reset game & play again</button>
+    </div>
+    <script src="rockpaperscissors.js"></script>
+  </body>
+</html>
