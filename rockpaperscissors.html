@@ -17,23 +17,29 @@
     <div>
       <h2>What will you play?</h2>
       <div>
-        <input type="radio" id="rock" value="rock" name="player" />
+        <input type="radio" id="rock" value="Rock" name="player" />
         <label for="rock">Rock</label>
       </div>
       <div>
-        <input type="radio" id="paper" value="paper" name="player" />
+        <input type="radio" id="paper" value="Paper" name="player" />
         <label for="paper">Paper</label>
       </div>
       <div>
-        <input type="radio" id="scissors" value="scissors" name="player" />
+        <input type="radio" id="scissors" value="Scissors" name="player" />
         <label for="scissors">Scissors</label>
       </div>
       <div><button id="player-play" type="submit">Submit</button></div>
+    </div>
+    <div>
+      You played: <span id="players-choice"></span>
     </div>
 
     <div>
       <h2>Press button to see what the computer played</h2>
       <button id="computer-play">Computer played....</button>
+      <div>
+        Computer result: <span id="computer-result"></span>
+      </div>
     </div>
 
     <div>
