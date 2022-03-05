@@ -30,25 +30,21 @@
       </div>
       <div><button id="player-play" type="submit">Submit</button></div>
     </div>
-    <div>
-      You played: <span id="players-choice"></span>
-    </div>
+    <div>You played: <span id="players-choice"></span></div>
 
     <div>
       <h2>Press button to see what the computer played</h2>
       <button id="computer-play">Computer played....</button>
-      <div>
-        Computer result: <span id="computer-result"></span>
-      </div>
+      <div>Computer result: <span id="computer-result"></span></div>
     </div>
 
     <div>
       <h2>And the winner is:</h2>
-      <span>YOU</span> / <span>COMPUTER</span>
+      <span id="winner"></span>
     </div>
 
     <div>
-      <button>Reset game & play again</button>
+      <button value="reload" onclick="window.location.reload();">Reset game & play again</button>
     </div>
     <script src="rockpaperscissors.js"></script>
   </body>
