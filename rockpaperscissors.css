@@ -1,0 +1,90 @@
+:root {
+  /* font-families */
+  --ff-display: "Bungee Inline", cursive;
+  --ff-sans-serif: "Nunito", sans-serif;
+
+  /* colors */
+  --primary-color: 323, 100%, 50%;
+  --secondary-color: 210, 77%, 48%;
+  --tertiary-color: 177, 79%, 54%;
+  --clr-dark: 300, 35%, 10%;
+  --clr-light: 100 100% 100%;
+
+  /* font-sizes */
+  --fs-900: 9.375rem;
+  --fs-800: 6.25rem;
+  --fs-700: 3.5rem;
+  --fs-600: 2rem;
+  --fs-500: 1.75rem;
+  --fs-400: 1.125rem;
+  --fs-300: 1rem;
+  --fs-200: 0.875rem;
+}
+
+body {
+  background-image: url("media/bg-picture-arcade.jpeg");
+  background-size: cover;
+  min-height: 100vh;
+  font-family: var(--ff-sans-serif);
+  text-align: center;
+}
+
+h1 {
+  font-family: var(--ff-display);
+  color: hsl(var(--secondary-color));
+  font-size: var(--fs-700);
+}
+
+h2 {
+  margin: 0;
+  font-size: var(--fs-500);
+}
+
+h3 {
+  margin-bottom: 16px;
+  font-size: var(--fs-200);
+  font-weight: 400;
+}
+
+i {
+  color: hsl(var(--secondary-color));
+}
+
+button {
+  background-color: hsl(var(--primary-color));
+  padding: 4px 48px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  color: hsl(var(--clr-light));
+  font-family: var(--ff-sans-serif);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 60px;
+  background-color: hsl(var(--clr-light) / 0.9);
+  border: 5px solid hsl(var(--primary-color));
+  border-radius: 16px;
+}
+
+.play-area {
+  display: flex;
+  margin: 0 20px 40px 20px;
+  justify-content: space-evenly;
+}
+
+.play-area-you,
+.play-area-computer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+}
+
+.vl {
+  border-left: 6px solid hsl(var(--primary-color));
+  height: 300px;
+  border-radius: 6px;
+}
