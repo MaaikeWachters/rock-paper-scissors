@@ -112,7 +112,8 @@ let resetButton = ` <div>
 
 function displayWinner() {
   setTimeout(function () {
-    if (computerChoice === playerChoice) {
+    if (computerChoice === "" || playerChoice === "") {
+    } else if (computerChoice === playerChoice) {
       winnerDeclaration.innerHTML = messageTie + resetButton;
     } else if (computerChoice === "Rock" && playerChoice === "Scissors") {
       winnerDeclaration.innerHTML = messageComputerWon + resetButton;

@@ -10,6 +10,12 @@
   --clr-dark: 300, 35%, 10%;
   --clr-light: 100 100% 100%;
 
+  /* opacities */
+  --primary-color-20: hsla(323 100% 50% / 0.2);
+  --primary-color-50: hsla(323 100% 50% / 0.5);
+
+  --tertiary-color-50: hsla(177 77% 48% / 0.5);
+
   /* font-sizes */
   --fs-900: 9.375rem;
   --fs-800: 6.25rem;
@@ -76,6 +82,11 @@ button {
   font-weight: 700;
 }
 
+button:hover {
+  background-color: var(--primary-color-50);
+  transition: all 100ms ease-in-out;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -100,7 +111,7 @@ button {
 }
 
 .vl {
-  border-left: 6px solid hsl(var(--primary-color));
+  border-left: 6px solid var(--primary-color-20);
   height: 300px;
   border-radius: 6px;
 }
@@ -119,4 +130,9 @@ button {
   background-color: hsl(var(--tertiary-color));
   color: hsl(var(--clr-dark));
   margin-bottom: 24px;
+}
+
+.reset-button:hover {
+  background-color: var(--tertiary-color-50);
+  transition: all 100ms ease-in-out;
 }
