@@ -22,7 +22,7 @@
       <h1>Rock Paper Scissors</h1>
 
       <div class="play-area">
-        <div class="play-area-you">
+        <div class="play-area-you" id="players-choice">
           <h2>You</h2>
 
           <div>
@@ -35,6 +35,7 @@
               <input type="radio" id="paper" value="Paper" name="player" />
               <label for="paper">Paper</label>
             </div>
+
             <div>
               <input
                 type="radio"
@@ -45,33 +46,26 @@
               <label for="scissors">Scissors</label>
             </div>
           </div>
-          <div><span id="players-choice"></span></div>
           <div><button id="player-play" type="submit">Submit</button></div>
         </div>
 
         <div class="vl"></div>
 
-        <div class="play-area-computer">
+        <div class="play-area-computer" id="computer-result">
           <h2>Computer</h2>
           <div>
             <i class="fa-solid fa-robot fa-7x"></i>
           </div>
-          <div><span id="computer-result"></span></div>
+
           <button id="computer-play">Play</button>
         </div>
       </div>
 
-      <!-- 
       <div>
-        <h2>And the winner is:</h2>
         <span id="winner"></span>
       </div>
 
-      <div>
-        <button value="reload" onclick="window.location.reload();">
-          Reset game & play again
-        </button>
-      </div>-->
+     
     </div>
     <script src="rockpaperscissors.js"></script>
   </body>

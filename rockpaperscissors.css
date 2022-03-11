@@ -21,6 +21,16 @@
   --fs-200: 0.875rem;
 }
 
+/* Utility classes */
+
+.primary-color {
+  color: hsl(var(--primary-color));
+}
+
+.secondary-color {
+  color: hsl(var(--secondary-color));
+}
+
 body {
   background-image: url("media/bg-picture-arcade.jpeg");
   background-size: cover;
@@ -46,18 +56,24 @@ h3 {
   font-weight: 400;
 }
 
+h4 {
+  font-family: var(--ff-display);
+  font-size: var(--fs-700);
+}
+
 i {
   color: hsl(var(--secondary-color));
 }
 
 button {
   background-color: hsl(var(--primary-color));
-  padding: 4px 48px;
+  padding: 8px 48px;
   border: none;
-  border-radius: 20px;
+  border-radius: 24px;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
   color: hsl(var(--clr-light));
   font-family: var(--ff-sans-serif);
+  font-weight: 700;
 }
 
 .container {
@@ -87,4 +103,20 @@ button {
   border-left: 6px solid hsl(var(--primary-color));
   height: 300px;
   border-radius: 6px;
+}
+
+.player-played {
+  font-size: var(--fs-600);
+  color: hsl(var(--primary-color));
+}
+
+.computer-played {
+  font-size: var(--fs-600);
+  color: hsl(var(--secondary-color));
+}
+
+.reset-button {
+  background-color: hsl(var(--tertiary-color));
+  color: hsl(var(--clr-dark));
+  margin-bottom: 24px;
 }
