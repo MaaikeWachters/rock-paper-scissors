@@ -41,7 +41,11 @@ function getComputerPlay() {
         `;
     }
   } else {
-    alert("You need to play first!");
+    let alertMessage = document.getElementById("alert-message");
+    alertMessage.innerHTML = `<div class="alert">
+ 
+ <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  You need to play first!</div>`;
   }
 }
 

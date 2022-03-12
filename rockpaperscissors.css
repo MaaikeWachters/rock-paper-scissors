@@ -136,3 +136,43 @@ button:hover {
   background-color: var(--tertiary-color-50);
   transition: all 100ms ease-in-out;
 }
+
+/* The alert message box */
+.alert {
+  padding: 20px;
+  background-color: #f44336; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+
+/* changing the appearance of the radio buttons */
+input[type="radio"] {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border: 1px solid hsl(var(--secondary-color));
+  border-radius: 50%;
+  background-clip: content-box;
+  padding: 3px;
+}
+
+input[type="radio"]:checked {
+  background-color: hsl(var(--primary-color));
+}
